@@ -1,0 +1,11 @@
+.dataTable tbody tr {
+    height: 40px; 
+    }
+    
+.btn {
+  margin-top: 5px;
+}
+
+#shiny-notification-panel {
+  width: 300px;
+}
