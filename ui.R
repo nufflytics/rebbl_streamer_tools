@@ -13,10 +13,16 @@ fluidPage(
             column(6, selectizeInput("away_team", "", choices = "")))
     ),
     fluidRow(
-        column(2, actionButton("hide_display", "Remove display", class = "btn-danger")),
+        column(2, actionButton("hide_display", "Clear display", class = "btn-danger")),
+        column(2, actionButton("show_splash", "Show Splash")),
         column(2, actionButton("show_ladder", "Show Ladder"))
         ),
+    
+    h3("Ladder"),
     tableOutput("debug"),
-    verbatimTextOutput("debug2")
+    h3("Home Team"),
+    tableOutput("home_picker"),
+    h3("Away Team"),
+    tableOutput("away_picker")
     
 )
